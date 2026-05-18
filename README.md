@@ -171,8 +171,8 @@ All services start automatically. Visit http://localhost:5173
 
 | UoM | Formula |
 |-----|---------|
-|numeric_min / percent_min = Higher is better = Achievement ÷ Target × 100 |
-|numeric_max / percent_max = Lower is better = Target ÷ Achievement × 100 |
+|numeric_min / percent_min = Higher is better | `= Achievement ÷ Target × 100 `|
+|numeric_max / percent_max = Lower is better | `= Target ÷ Achievement × 100 `|
 | timeline | `100 if days_late ≤ 0, else max(100 − days_late × 2, 0)` |
 | zero | `100 if actual == 0, else 0` |
 
