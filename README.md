@@ -4,15 +4,6 @@ A production-grade, full-stack Goal Setting & Tracking Portal with role-based ac
 
 ## Architecture
 
-```
-┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-│   Netlify CDN   │────▶│  Render Backend  │────▶│  MongoDB Atlas  │
-│  React + Vite   │     │  Express + Node  │     │   Free Tier     │
-│   (Frontend)    │     │   JWT Auth       │     │                 │
-└─────────────────┘     │   REST API       │     └─────────────────┘
-                        │   node-cron      │
-                        └──────────────────┘
-```
 
 ## Tech Stack
 
@@ -25,10 +16,10 @@ A production-grade, full-stack Goal Setting & Tracking Portal with role-based ac
 | Jobs | node-cron |
 | Deploy | Netlify (FE) + Render (BE) + MongoDB Atlas |
 
-## Prerequisites (Windows — all free)
+## Prerequisites (Windows )
 
 - [Node.js 20 LTS](https://nodejs.org/) — download installer
-- [MongoDB Community Server](https://www.mongodb.com/try/download/community) OR use MongoDB Atlas (free)
+- [MongoDB Community Server](https://www.mongodb.com/try/download/community) OR use MongoDB Atlas 
 - [Git](https://git-scm.com/download/win)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) (optional, for Docker setup)
 
@@ -188,7 +179,7 @@ All services start automatically. Visit http://localhost:5173
 
 ## Deployment
 
-### Frontend → Netlify (Free)
+### Frontend → Netlify 
 
 ```bash
 cd frontend
@@ -200,7 +191,7 @@ npm run build
 # Environment variable: VITE_API_URL=https://your-render-url.onrender.com
 ```
 
-### Backend → Render (Free)
+### Backend → Render 
 
 1. Push code to GitHub
 2. render.com → New Web Service → Connect GitHub repo
@@ -209,7 +200,7 @@ npm run build
 5. Start command: `node server.js`
 6. Add environment variables (copy from backend/.env, update MONGODB_URI and FRONTEND_URL)
 
-### Database → MongoDB Atlas (Free)
+### Database → MongoDB Atlas 
 
 1. atlas.mongodb.com → Create free M0 cluster
 2. Database Access → Add user with password
