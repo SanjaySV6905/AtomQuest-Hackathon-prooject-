@@ -46,6 +46,10 @@ mongoose.connect(process.env.MONGODB_URI)
     const { startEscalationJobs } = require('./jobs/escalations');
     startEscalationJobs();
 
+    if (process.env.SEED_ON_START === 'true') {
+      require('./seed.js').then(() => console.log('✅ Seed done')).catch(console.error);
+    }
+
     const PORT = process.env.PORT || 5000;
     app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
   })
