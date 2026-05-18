@@ -2,6 +2,16 @@
 
 A production-grade, full-stack Goal Setting & Tracking Portal with role-based access, real-time scoring, and automated escalations.
 
+## 🌐 Live Demo
+https://atomquestsvsanjay.netlify.app
+
+| Role | Email | Password |
+|------|-------|----------|
+| Admin | neha@goalportal.com | password123 |
+| Manager | ankit@goalportal.com | password123 |
+| Employee | priya@goalportal.com | password123 |
+| Employee | rahul@goalportal.com | password123 |
+
 ## System Architecture
 
 ![GoalPortal Architecture](architecture.png)
@@ -161,8 +171,8 @@ All services start automatically. Visit http://localhost:5173
 
 | UoM | Formula |
 |-----|---------|
-| numeric_max / percent_max | `min(Actual / Target × 100, 150)` |
-| numeric_min / percent_min | `min(Target / Actual × 100, 150)` |
+|numeric_min / percent_min = Higher is better = Achievement ÷ Target × 100 |
+|numeric_max / percent_max = Lower is better = Target ÷ Achievement × 100 |
 | timeline | `100 if days_late ≤ 0, else max(100 − days_late × 2, 0)` |
 | zero | `100 if actual == 0, else 0` |
 
@@ -218,6 +228,13 @@ Add these in GitHub repo → Settings → Secrets:
 - `VITE_API_URL` — your Render backend URL
 
 ---
+## 💰 Cost Breakdown
+| Service | Plan | Cost |
+|---------|------|------|
+| Netlify | Free | $0 |
+| Render | Free | $0 |
+| MongoDB Atlas | M0 Free | $0 |
+| Total | | $0/month |
 
 ## Project Structure
 
