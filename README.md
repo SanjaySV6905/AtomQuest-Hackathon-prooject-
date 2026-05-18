@@ -2,8 +2,9 @@
 
 A production-grade, full-stack Goal Setting & Tracking Portal with role-based access, real-time scoring, and automated escalations.
 
-## Architecture
+## System Architecture
 
+![GoalPortal Architecture](architecture.png)
 
 ## Tech Stack
 
