@@ -212,11 +212,8 @@ async function seed() {
   console.log('  Manager:  ankit@goalportal.com');
   console.log('  Employee: priya@goalportal.com');
   console.log('  Employee: rahul@goalportal.com');
-
-  await mongoose.disconnect();
 }
 
 seed().catch(err => {
   console.error('Seed error:', err);
-  process.exit(1);
 });
